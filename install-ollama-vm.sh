@@ -38,7 +38,7 @@ echo "== [4/6] Pare-feu : n'ouvrir que le réseau local =="
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow OpenSSH
-ufw allow from 10.0.0.0/8 to any port 11434 proto tcp comment "Ollama LAN ecole"
+ufw allow from 172.16.20.0/16 to any port 11434 proto tcp comment "Ollama LAN ecole"
 ufw --force enable
 
 echo "== [5/6] Téléchargement des modèles (long : 20-30 Go) =="
