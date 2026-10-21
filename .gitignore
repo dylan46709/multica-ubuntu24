@@ -1,0 +1,10 @@
+# Secrets et configuration locale
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs et temporaires
+*.log
+*.tmp
