@@ -7,7 +7,7 @@
 set -euo pipefail
 
 # --- À ADAPTER ----------------------------------------------
-IP_LLM="${IP_LLM:-10.13.1.X}"        # IP de vm-llm (hostname -I sur l'autre VM)
+IP_LLM="${IP_LLM:-172.16.20.194}"        # IP de vm-llm (hostname -I sur l'autre VM)
 IP_APP=$(hostname -I | awk '{print $1}')
 # Images Multica : même nommage que la doc (registry à ajuster
 # si tes images sont dans Gitea plutôt que Docker Hub)
